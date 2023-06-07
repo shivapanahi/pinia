@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "do pinia project",
+      "active": false
+    },
+    {
+      "id": 2,
+      "title": "do tailwind project",
+      "active": false
+    },
+    {
+      "id": 3,
+      "title": "take a shower",
+      "active": false
+    },
+    {
+      "id": 4
+    }
+  ]
+}
