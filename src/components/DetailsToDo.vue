@@ -1,8 +1,11 @@
 <template>
-    <div>
-       <h2>{{ todo.title }}</h2>
-       <i @click="deleteTodo(todo.id)" class="material-icons">delete</i>
-       <i @click="toggleActiveTodo(todo.id)" class="material-icons" >checked </i>
+    <div class="todo">
+       <h4>{{ todo.title }}</h4>
+       <div>
+         <i @click="deleteTodo(todo.id)" class="material-icons">delete</i>
+        <i @click="toggleActiveTodo(todo.id)" class="material-icons" >checked </i>
+       </div>
+      
     </div>
 </template>
 

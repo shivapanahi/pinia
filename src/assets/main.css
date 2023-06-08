@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 50rem;
+    width: 80%;
+}
+
+.todo {
+    width: 300px;
+    background-color: beige;
+    display: flex;
+    margin-top: 10px;
+    padding: 20px;
+    flex-flow: wrap;
+    position: relative;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.todo i {
+    top: 50%;
+}
+
+.add-todo {
+    background-color: rgb(9, 105, 6);
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.show {
+    background-color: rgb(45, 45, 218);
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    margin-top: 5px;
+}

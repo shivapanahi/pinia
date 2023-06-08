@@ -1,29 +1,31 @@
 <template>
   <main>
     <header>
-      <h1>pinina in vue3</h1>
-      <p>{{ toDOStore.name }}</p>
+      <h1>todos</h1>
     </header>
-    <div>
+
+    <nav>
+      <button @click="filter = 'all'" class="show">show all</button>
+      <button @click="filter = 'actives'" class="show">show actives</button>
+    </nav>
+    <div class="container">
+      <div>
       <AddToDo></AddToDo>
     </div>
-    <nav>
-      <button @click="filter = 'all'">show all</button>
-      <button @click="filter = 'actives'">show actives</button>
-    </nav>
-    <div v-if="loading">todos is loading ....</div>
-    <div v-if="filter == 'all'">
-      <p>todos </p>
-      <p>totalCount:{{ totalCount }} </p>
-      <div v-for="todo in todos" :key="todo.id">
-        <DetailsToDo :todo="todo" />
+      <div v-if="loading">todos is loading ....</div>
+      <div v-if="filter == 'all'">
+        <p>todos </p>
+        <!-- <p>totalCount:{{ totalCount }} </p> -->
+        <div v-for="todo in todos" :key="todo.id">
+          <DetailsToDo :todo="todo" />
+        </div>
       </div>
-    </div>
-    <div v-if="filter == 'actives'">
-      <p>active todos</p>
-      <p>activeCount {{ activesCount }}</p>
-      <div v-for="active in actives" :key="active.id">
-        <DetailsToDo :todo="active" />
+      <div v-if="filter == 'actives'">
+        <p>active todos</p>
+        <!-- <p>activeCount {{ activesCount }}</p> -->
+        <div v-for="active in actives" :key="active.id">
+          <DetailsToDo :todo="active" />
+        </div>
       </div>
     </div>
   </main>

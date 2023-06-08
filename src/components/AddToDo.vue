@@ -1,7 +1,7 @@
 <template>
    <form @submit.prevent="handleSubmit">
-     <input type="text" v-model="newTodo">
-     <button>add todo</button>
+     <input type="text" v-model="newTodo" placeholder="add todo">
+     <button class="add-todo">add todo</button>
    </form>
 </template>
 
